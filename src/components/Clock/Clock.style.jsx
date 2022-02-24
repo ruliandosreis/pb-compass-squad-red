@@ -5,6 +5,8 @@ export const DateContainer = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: calc(100vw/3);
+    margin-top: 15px;
 `
 export const ClockContainer = styled.h1`
     font-size: 9em;

@@ -52,7 +52,7 @@ export const Clock = () => {
             });
         }, 1000);
         return () => clearInterval(timer);
-    });
+    },[dateTime]);
 
     return (
         <DateContainer>
