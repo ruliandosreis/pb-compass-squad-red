@@ -1,14 +1,17 @@
 import React from 'react';
 import { Clock } from '../Clock/Clock';
+import { Logo } from '../Logo/Logo';
 import { Weather } from '../Weather/Weather';
+import { HeaderContainer } from './Header.style';
 
-export const NavBar = () => {
+export const Header = () => {
     return (
         <>
-            <div>
-                <Weather/>
+            <HeaderContainer>
+                <Logo/>
                 <Clock/>
-            </div>
+                <Weather/>
+            </HeaderContainer>
         </>
     );
 };
