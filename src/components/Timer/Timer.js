@@ -1,8 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
-import {TimerContainer,TimerNumber} from './Timer.style'
+import {ResetContainer,TimerContainer,TimerNumber,FooterResetTimerDiv,FooterResetTimerButton} from './Timer.style'
 
 export default function Timer() {
-  const [num, setNum] = useState(180);
+  let number = 180;
+
+  const [num, setNum] = useState(number);
   
   let intervalRef = useRef();
   
@@ -20,9 +22,15 @@ export default function Timer() {
 
 
   return (
+    <ResetContainer>
     <TimerContainer>
         <TimerNumber>{num}</TimerNumber>
         <p>seconds</p>
     </TimerContainer>
+      <FooterResetTimerDiv>
+          <FooterResetTimerButton onClick ={()=>setNum(180)}>Continuar Navegando
+      </FooterResetTimerButton>
+    </FooterResetTimerDiv>
+    </ResetContainer>
   );
 }

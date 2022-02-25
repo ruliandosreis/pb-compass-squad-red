@@ -1,6 +1,6 @@
 import React from 'react';
 import UserSvg from '../../assets/icons/VectorUser.svg'
-import { FooterContainer, FooterText, StaticText, Line, FooterSearchContainer, FooterSearch, FooterSearchIcon, FooterResetContainer, ResetWarning, FooterResetTimerButton, FooterResetTimerAnchor, FooterLogoutButton, FooterLogoutAnchor } from './Footer.style'
+import { FooterContainer, FooterText, StaticText, Line, FooterSearchContainer, FooterSearch, FooterSearchIcon, FooterResetContainer, ResetWarning, FooterLogoutButton, FooterLogoutAnchor } from './Footer.style'
 
 import Timer from '../Timer/Timer'
 
@@ -21,13 +21,8 @@ export const Footer = () => {
                 <Line></Line>
                 <FooterResetContainer>
                     <ResetWarning>Application refresh in</ResetWarning>
-                </FooterResetContainer>
-                <FooterResetContainer> 
                         <Timer/>
                 </FooterResetContainer>
-                <FooterResetTimerButton>
-                    <FooterResetTimerAnchor a href="">Continuar Navegando</FooterResetTimerAnchor>
-                </FooterResetTimerButton>
                 <FooterLogoutButton>
                     <FooterLogoutAnchor a href="http://localhost:3000/login">Logout</FooterLogoutAnchor>
                 </FooterLogoutButton>

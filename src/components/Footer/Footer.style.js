@@ -67,14 +67,13 @@ export const FooterSearch = styled.input`
 `
 export const FooterSearchIcon = styled.img`
   position: relative;
-  right: 78%;
+  right: 77%;
   width:20px;
   height: 20px;
 `
 export const FooterResetContainer = styled.div`
   display:flex;
   align-items: center;
-  padding:10px;
 `
 
 export const ResetWarning  = styled.p`
@@ -88,30 +87,6 @@ export const ResetWarning  = styled.p`
   
 `
 
-export const FooterResetTimerButton = styled.div`
-  background-color: #FFFFFF;
-  width: 131px;
-  height: auto;
-  display:flex;
-  align-items: center;
-  margin:0;
-  padding:0;
-`
-export const FooterResetTimerAnchor = styled.a`
-  text-decoration: none;
-  padding-top:38px;
-  padding-left: 17px;
-  padding-right: 18px;
-  font-family: 'Mark Pro';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15,21px;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  color:#C13216;
-`
 export const FooterLogoutButton = styled.div`
   background-color: #linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);;
   width: 128px;
