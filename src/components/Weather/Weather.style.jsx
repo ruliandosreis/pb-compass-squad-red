@@ -34,7 +34,7 @@ export const WeatherContainer = styled.div`
     column-gap: 10px;
 `;
 export const WeatherHeading = styled.h2`
-    font-family: 'Mark Pro';
+    font-family: 'Mark Pro Bold';
     font-weight: 700;
     color: ${colorWeather};
     font-size: 3em;
