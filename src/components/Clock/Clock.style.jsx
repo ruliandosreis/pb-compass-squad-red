@@ -11,7 +11,7 @@ export const DateContainer = styled.div`
 export const ClockContainer = styled.h1`
     font-size: 9em;
     text-align: center;
-    font-family: 'Mark Pro';
+    font-family: 'Mark Pro Bold';
     font-weight: 700;
     color: ${colorClock};
 `
