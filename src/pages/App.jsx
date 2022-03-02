@@ -4,6 +4,7 @@ import { LoginPage } from './LoginPage/LoginPage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { MainPage } from './MainPage/MainPage';
+import { SearchPage } from './SearchPage/SearchPage.jsx';
 import { GlobalStyle } from '../index.style';
 
 export const App = () => {
@@ -14,6 +15,7 @@ export const App = () => {
           <Routes>
               <Route path="/" element={<MainPage />}/>
               <Route path="/login" element={<LoginPage />}/>
+              <Route path="/search" element={<SearchPage />}/>
           </Routes>
           </BrowserRouter>
         </>
