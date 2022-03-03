@@ -10,17 +10,33 @@ export const LoginMainCointainer = styled.div`
   padding: 0;
   box-sizing: border-box;
 
+  @media screen and (max-width:1024px) {
+    position: static;
+  }
 `
 
 export const LeftPanel = styled.div`
   width:50%;
   min-height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   background: linear-gradient(180deg, #33383D 0%, #1C1D20 100%);
 
+  @media screen and (max-width: 1024px){
+    width: 100%;
+    position: absolute;
+  }
+`
+
+export const LeftPanelLogo = styled.img`
+  display: none;
+  @media screen and (max-width: 1024px){
+    display:inline-block;
+    margin:50px;
+  }
 `
 
 export const RightPanel = styled.div`
@@ -32,12 +48,20 @@ export const RightPanel = styled.div`
   display: flex;
   justify-content: center;
 
+  @media screen and (max-width: 1024px){
+    display:none;
+  }
+
 `
 
 export const RightPanelLogo = styled.img`
   width: 300px;
   height: 70px;
   margin: 35px auto 0 auto;
+
+  @media screen and (max-width: 1024px){
+    display:none;
+  }
 
 `
 
@@ -48,6 +72,15 @@ export const LoginInfoContainer = styled.div`
   @media screen and (max-height:820px){
     padding:45px 0;
   }
+  @media screen and (max-width: 1024px){
+    width:80%;
+  }
+`
+
+export const LoginTextContainer = styled.div`
+  width: 100%;
+  display:flex;
+  flex-direction: column;
 `
 
 export const LoginFormHeaderText = styled.h1`
@@ -114,6 +147,11 @@ export const LoginInput = styled.input`
   &:focus{
     border: 1px solid #E9B425;
   }
+
+  @media screen and (max-width: 1024px){
+    width:90%;
+    margin: 15px 15px 15px 0;
+  }
 `
 
 export const InputIcon = styled.img`
@@ -121,6 +159,9 @@ export const InputIcon = styled.img`
   height: 20px;
   position: relative;
   left: -45px;
+  @media screen and (max-width: 1024px){
+    left: 0px;
+  }
 `
 
 export const LoginErrorMessageContainer = styled.div`
@@ -132,6 +173,10 @@ export const LoginErrorMessageContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 1024px){
+    background-color: transparent;
+  }
 `
 
 export const ContinueButton = styled.button`
@@ -151,6 +196,11 @@ export const ContinueButton = styled.button`
   line-height: 23px;
   cursor: pointer;
   margin:45px 0;
+
+  @media screen and (max-width:1024px) {
+    margin: 60px 0;  
+  }
+
 `
 
 export const ErrorMessageText = styled.p`
