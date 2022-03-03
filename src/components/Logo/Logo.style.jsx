@@ -5,4 +5,6 @@ export const ImageContainer = styled.div`
     display: flex;
     margin: 25px 0 0 40px;
 `;
-export const ImageLogo = styled.div``;
+export const LogoContainer = styled.div`
+    margin: 0px;
+`
