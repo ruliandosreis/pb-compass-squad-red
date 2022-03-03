@@ -149,7 +149,7 @@ export const LoginInput = styled.input`
   }
 
   @media screen and (max-width: 1024px){
-    width:90%;
+    width:100%;
     margin: 15px 15px 15px 0;
   }
 `
@@ -160,7 +160,7 @@ export const InputIcon = styled.img`
   position: relative;
   left: -45px;
   @media screen and (max-width: 1024px){
-    left: 0px;
+    left: -55px;
   }
 `
 
