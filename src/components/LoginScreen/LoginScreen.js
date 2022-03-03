@@ -12,9 +12,11 @@ import { useNavigate } from 'react-router-dom'
 import { 
   LoginMainCointainer,
   LeftPanel,
+  LeftPanelLogo,
   RightPanel,
   RightPanelLogo,
   LoginInfoContainer,
+  LoginTextContainer,
   LoginFormHeaderText,
   LoginSubTextContainer,
   LoginFormDescriptionText,
@@ -46,11 +48,14 @@ export const LoginScreen = () => {
     <>
       <LoginMainCointainer>
         <LeftPanel>
+          <LeftPanelLogo src={LogoImg}/>
           <LoginInfoContainer>
-            <LoginFormHeaderText>Olá,</LoginFormHeaderText>
-            <LoginSubTextContainer>
-              <LoginFormDescriptionText>Para continuar navegando de forma segura, efetue o login na rede.</LoginFormDescriptionText>
-            </LoginSubTextContainer>
+            <LoginTextContainer>
+              <LoginFormHeaderText>Olá,</LoginFormHeaderText>
+              <LoginSubTextContainer>
+                <LoginFormDescriptionText>Para continuar navegando de forma segura, efetue o login na rede.</LoginFormDescriptionText>
+              </LoginSubTextContainer>
+            </LoginTextContainer>
             <LoginFormInfoText>Login</LoginFormInfoText>
             <LoginForm onSubmit={handleSubmit(submitForm)}>
               <LoginInputContainer>
