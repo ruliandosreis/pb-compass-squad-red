@@ -128,7 +128,12 @@ export const LoginErrorMessageContainer = styled.div`
   height:55px;
   background: transparent;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `
+
 export const ContinueButton = styled.button`
   width: 96%;
   height: 70px;
@@ -146,4 +151,14 @@ export const ContinueButton = styled.button`
   line-height: 23px;
   cursor: pointer;
   margin:45px 0;
+`
+
+export const ErrorMessageText = styled.p`
+  font-family: Mark Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #E9B425;
 `
