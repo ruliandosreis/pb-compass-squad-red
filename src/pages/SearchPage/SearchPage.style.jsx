@@ -27,6 +27,8 @@ export const ResultContainer = styled.div`
 `;
 
 export const InputContainer = styled.div`
+    display: flex ;
+    flex-direction: column ;
     min-height: 200px;
     max-width: 520px ;
     border: 1px solid red;
