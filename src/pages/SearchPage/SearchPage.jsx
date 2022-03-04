@@ -7,6 +7,9 @@ import {
 } from './SearchPage.style';
 import { LogoWhite } from '../../components/Logo/Logo';
 import { Search } from '../../components/Search/Search';
+import { ButtonSearch } from '../../components/ButtonSearch/ButtonSearch';
+
+import { InputSearch } from "../../components/InputSearch/InputSearch";
 
 export const SearchPage = () => {
     return (
@@ -19,7 +22,8 @@ export const SearchPage = () => {
             </ResultContainer>
 
             <InputContainer>
-
+                <InputSearch></InputSearch>
+                <ButtonSearch></ButtonSearch>
             </InputContainer>
         </SearchContainer>
     );

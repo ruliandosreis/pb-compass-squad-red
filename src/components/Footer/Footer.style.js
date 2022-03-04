@@ -88,7 +88,7 @@ export const ResetWarning  = styled.p`
 `
 
 export const FooterLogoutButton = styled.div`
-  background-color: #linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);;
+  background-color: linear-gradient(90.16deg, #33383D 0%, #1C1D20 100%);;
   width: 128px;
   height: auto;
   justify-content: center;

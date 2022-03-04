@@ -4,7 +4,7 @@ import { ResultSpan } from './Search.style';
 export const Search = () => {
     return (
         <>
-            <ResultSpan>Nome: Pedrinho da Baixada </ResultSpan>
+            <ResultSpan>Nome: Lorem Ipsum</ResultSpan>
             <ResultSpan>DC: Rio de Janeiro/RJ </ResultSpan>
             <ResultSpan>
                 Innovation Studio: Adobe Experience Manager{' '}
