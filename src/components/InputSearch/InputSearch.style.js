@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const InputSearchContainer = styled.div`
     display:flex;
     align-items: center;
-    justify-content: center;
     width:100%;
     margin: 0px;
 `
@@ -20,9 +19,10 @@ export const InputSearchStyle = styled.input`
     font-family: 'Roboto';
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 24px;
     line-height: 16px;
-    text-align: center;
+    text-align: flex-start;
+    padding-left: 15%;
     outline:none;
     &::placeholder{
         color:white;

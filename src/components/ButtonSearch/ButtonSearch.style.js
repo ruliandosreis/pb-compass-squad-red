@@ -6,8 +6,7 @@ export const ButtonsContainer = styled.div`
     flex-direction: column;
 `
 export const ButtonSearchStyle = styled.button`
-    width: 96%;
-    max-width: 380px;
+    width: 70%;
     height: 70px;
     outline: none;
     border: none;
@@ -22,7 +21,7 @@ export const ButtonSearchStyle = styled.button`
     font-size: 2.25em;
     line-height: 23px;
     cursor: pointer;
-    margin:45px 0;
+    margin:20px 0;
 
   @media screen and (max-width:1024px) {
      
@@ -30,8 +29,7 @@ export const ButtonSearchStyle = styled.button`
 `
 
 export const ButtonExitStyle = styled.button`
-    width: 96%;
-    max-width: 380px;
+    width: 70%;
     height: 70px;
     outline: none;
     border: none;
@@ -45,5 +43,5 @@ export const ButtonExitStyle = styled.button`
     font-size: 2.25em;
     line-height: 23px;
     cursor: pointer;
-    margin:45px 0;
+    margin-bottom:20px;
 `
