@@ -6,7 +6,6 @@ export const SearchContainer = styled.main`
     box-shadow: 4px 4px 70px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 `;
 
@@ -14,21 +13,24 @@ export const LogoContainer = styled.div`
     max-width: 310px;
     max-height: auto;
     align-self: center;
-    margin-top: 11.6vh;
+    margin-top: 3%;
 `;
 export const ResultContainer = styled.div`
-    max-width: 600px;
+    max-width: 35%;
     height: 700px;
     width: 100vw;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-left: 50px;
 `;
 
 export const InputContainer = styled.div`
+    display: flex ;
+    flex-direction: column ;
     min-height: 200px;
-    max-width: 520px ;
-    border: 1px solid red;
+    max-width: 30% ;
+    /*border: 1px solid red;*/
     width: 100vw
 `
