@@ -6,19 +6,22 @@ import Timer from '../Timer/Timer'
 import {ApiResponse} from '../API/Api.Response'
 
 export const Footer = () => {
-
 const [name, setName] = useState('')
+
 
 function handleChange(e) {
          setName(e.target.value);
-        if (e.keyCode === 13) {
-            window.location.href = "http://localhost:3000"
-    }
   }
+
+function onKeyEnter(e) {
+    if (e.keyCode === 13) {
+        window.location.href = "http://localhost:3000/search"
+    }
+}
 
     return (
         <>
-        <ApiResponse searchName={name}/>
+            <ApiResponse searchName = {name} style={{display:'none'}}></ApiResponse>
             <FooterContainer>
                 <FooterText>
                     <StaticText>Essa janela do navegador é usada para manter sua sessão de autenticação ativa.
@@ -30,8 +33,9 @@ function handleChange(e) {
                     <FooterSearch 
                         type='text' 
                         placeholder='Buscar Usuário'
-                        defaultValue={name} 
-                        onKeyDown={handleChange}
+                        defaultValue={name}
+                        onChange = {handleChange}
+                        onKeyDown = {onKeyEnter}
                     ></FooterSearch>
                     <FooterSearchIcon src={UserSvg} />
                 </FooterSearchContainer>

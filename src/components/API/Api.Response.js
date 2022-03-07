@@ -1,13 +1,12 @@
 import React,{ useState, useEffect } from 'react'
 import axios from 'axios';
-
+import { Search } from '../Search/Search';
 
 export const ApiResponse = (props) =>{
 
     const searchName  = props.searchName;
-    console.log(searchName);
-    const [developers,setDevelopers]=useState([])
     
+    const [developers,setDevelopers]=useState([])
 
     useEffect(() =>{
         axios.get('https://developers-api.glitch.me/api')
@@ -18,10 +17,10 @@ export const ApiResponse = (props) =>{
         })
     },[searchName])
 
-    console.log(developers)
 
-    return(
+    return (
         <>
+        <Search {...developers}></Search>
         </>
-    )
-}
+    );
+};

@@ -17,10 +17,6 @@ export const SearchPage = () => {
             <LogoContainer>
                 <LogoWhite />
             </LogoContainer>
-            <ResultContainer>
-                <Search/>
-            </ResultContainer>
-
             <InputContainer>
                 <InputSearch></InputSearch>
                 <ButtonSearch></ButtonSearch>

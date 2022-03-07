@@ -21,7 +21,6 @@ export const ResultContainer = styled.div`
     width: 100vw;
     /*border: 1px solid blue;*/
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     padding-left: 50px;
 `;
