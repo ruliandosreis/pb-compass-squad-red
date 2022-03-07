@@ -1,12 +1,24 @@
-import React from 'react';
+import React,{useState} from 'react'
 import UserSvg from '../../assets/icons/VectorUser.svg'
 import { FooterContainer, FooterText, StaticText, Line, FooterSearchContainer, FooterSearch, FooterSearchIcon, FooterResetContainer, ResetWarning, FooterLogoutButton, FooterLogoutAnchor } from './Footer.style'
 
 import Timer from '../Timer/Timer'
+import {ApiResponse} from '../API/Api.Response'
 
 export const Footer = () => {
+
+const [name, setName] = useState('')
+
+function handleChange(e) {
+         setName(e.target.value);
+        if (e.keyCode === 13) {
+            window.location.href = "http://localhost:3000"
+    }
+  }
+
     return (
         <>
+        <ApiResponse searchName={name}/>
             <FooterContainer>
                 <FooterText>
                     <StaticText>Essa janela do navegador é usada para manter sua sessão de autenticação ativa.
@@ -15,7 +27,12 @@ export const Footer = () => {
                 </FooterText>
                 <Line></Line>
                 <FooterSearchContainer>
-                    <FooterSearch type='text' placeholder='Buscar Usuário'></FooterSearch>
+                    <FooterSearch 
+                        type='text' 
+                        placeholder='Buscar Usuário'
+                        defaultValue={name} 
+                        onKeyDown={handleChange}
+                    ></FooterSearch>
                     <FooterSearchIcon src={UserSvg} />
                 </FooterSearchContainer>
                 <Line></Line>
