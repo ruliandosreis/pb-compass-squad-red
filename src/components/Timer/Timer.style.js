@@ -20,6 +20,9 @@ export const TimerContainer = styled.div`
     font-weight: normal;
     font-size: 14px;
     line-height: 18px;
+    @media screen and (max-width:1024px){
+    display: none ;
+  }
 `
 export const TimerNumber = styled.p`
 font-family: Roboto;
@@ -39,6 +42,11 @@ export const FooterResetTimerDiv = styled.div`
   align-items: center;
   margin:0;
   padding:0;
+  @media screen and (max-width:1024px )
+  {
+    width: 6.8vw ;
+    min-width: 80px ;
+  }
 `
 export const FooterResetTimerButton = styled.a`
   text-decoration: none;
@@ -50,7 +58,10 @@ export const FooterResetTimerButton = styled.a`
   line-height: 15,21px;
   text-align: center;
   height: 100%;
-  width: 100%;
   color:#C13216;
   padding:35px;
+  @media screen and (max-width:1024px )
+  {
+    padding: 45px 0 35px 0 ;
+  }
   `
