@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import {ResetContainer,TimerContainer,TimerNumber,FooterResetTimerDiv,FooterResetTimerButton} from './Timer.style'
 
 export default function Timer() {
-  let number = 100000;
+  let number = 18000;
 
   const [num, setNum] = useState(number);
   

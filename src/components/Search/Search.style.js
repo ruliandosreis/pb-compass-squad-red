@@ -5,6 +5,7 @@ export const ResultSpan = styled.p`
     font-family: 'Roboto';
     font-weight: 400;
     color: #fff;
+    width: 35vw;
     @media screen and (max-width:1024px) {
       font-size: 1.5em;
     }

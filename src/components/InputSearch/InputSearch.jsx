@@ -1,12 +1,27 @@
-import React from "react";
-import UserSvg from '../../assets/icons/VectorUser.svg'
-import { InputSearchContainer, InputSearchStyle, InputSearchIcon } from "./InputSearch.style";
+import React,{useState} from "react";
+//import UserSvg from '../../assets/icons/VectorUser.svg'
+import { InputSearchContainer, InputSearchStyle } from "./InputSearch.style";
+import {ApiResponse} from '../API/Api.Response'
+
 
 export const InputSearch = () =>{
+
+    const [name, setName] = useState('')
+
+    function handleChange(e) {
+        setName(e.target.value);
+    }
+
     return (
         <InputSearchContainer>
-                    <InputSearchStyle type='text'></InputSearchStyle>
-                    <InputSearchIcon src={UserSvg} />
+                    <ApiResponse searchName={name}/>
+                    <InputSearchStyle       
+                    type='text'
+                    placeholder='Buscar Usuário'
+                    defaultValue={name}
+                    onChange = {handleChange}
+                    ></InputSearchStyle>
+                    
         </InputSearchContainer>
     )
 }
