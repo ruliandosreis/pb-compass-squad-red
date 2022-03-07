@@ -22,10 +22,10 @@ export const ButtonSearchStyle = styled.button`
     line-height: 23px;
     cursor: pointer;
     margin:20px 0;
-
-  @media screen and (max-width:1024px) {
-     
-  }
+    @media screen and (max-width: 1024px) {
+      height: 40px;
+      font-size: 1.5em;
+    }
 `
 
 export const ButtonExitStyle = styled.button`
@@ -44,4 +44,8 @@ export const ButtonExitStyle = styled.button`
     line-height: 23px;
     cursor: pointer;
     margin-bottom:20px;
+    @media screen and (max-width: 1024px) {
+      height: 40px;
+      font-size: 1.5em;
+    }
 `
