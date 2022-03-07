@@ -3,9 +3,12 @@ import styled from 'styled-components'
 export const InputSearchContainer = styled.div`
     display:flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: space-around;
+    height: 50vh;
     width:100%;
+    flex-direction: column;
     margin: 0PX auto;
+
 `
 
 export const InputSearchStyle = styled.input`

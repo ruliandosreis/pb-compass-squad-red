@@ -13,8 +13,8 @@ export const App = () => {
           <GlobalStyle />
           <BrowserRouter>
           <Routes>
-              <Route path="/" element={<MainPage />}/>
               <Route path="/login" element={<LoginPage />}/>
+              <Route path="/" element={<MainPage />}/>
               <Route path="/search" element={<SearchPage />}/>
           </Routes>
           </BrowserRouter>

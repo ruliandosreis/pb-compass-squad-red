@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-import UserSvg from '../../assets/icons/VectorUser.svg'
-import { InputSearchContainer, InputSearchStyle, InputSearchIcon } from "./InputSearch.style";
+//import UserSvg from '../../assets/icons/VectorUser.svg'
+import { InputSearchContainer, InputSearchStyle } from "./InputSearch.style";
 import {ApiResponse} from '../API/Api.Response'
 
 
@@ -21,7 +21,7 @@ export const InputSearch = () =>{
                     defaultValue={name}
                     onChange = {handleChange}
                     ></InputSearchStyle>
-                    <InputSearchIcon src={UserSvg} />
+                    
         </InputSearchContainer>
     )
 }
